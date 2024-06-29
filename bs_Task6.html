@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap task6</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Oo95Bj1E4h5CqGzR1uY5B5FZ5y6c3bTn/0e9fpCkBc/6q/NmUjFve9gxQToWF7FX" crossorigin="anonymous">
+    <style>
+        .container{
+            margin-top: 150px;
+            margin-left: 550px;
+            background-color: rgb(245, 243, 243);
+            width: 315px;
+            padding: 20px;
+            padding-right: 20px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            width: 500px;
+        }
+        .btn-submit {
+            background-color: #e5160e;
+            color: white;
+            box-shadow: black 25px;
+        }
+        .nothing-given {
+            display: block;
+            color: red;
+        }
+        .form-control:hover{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <div class="form-group">
+            <label for="name" style="font-size: medium;font-family: Arial, Helvetica, sans-serif;"> Name:</label><br>
+            <input type="text" class="form-control" placeholder="   enter name  " id="name" required style="width: 300px;height: 30px;border-radius: 3px;">
+            <div class="nothing-given" style="font-size: smaller;">
+                Name is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Email:</label><br>
+            <input type="email" class="form-control" placeholder="  enter email" id="email" required style="width: 300px;height: 30px;border-radius: 3px;">
+            <div class="nothing-given" style="font-size: smaller;">
+                Email is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Password:</label><br>
+            <input type="password" class="form-control" placeholder="enter password" id="password" required style="width: 300px;height: 30px;border-radius: 3px;">
+            <div class="nothing-given" style="font-size: smaller;">
+                password is required
+            </div>  
+        </div>
+        <div class="form-group">
+            <label for="hobbies" style="width: 400px;font-size: medium;font-family: Arial, Helvetica, sans-serif;">Hobbies:</label><br>
+            <select name="form-control" id="hobbies" style="width: 300px;height: 30px;border-radius: 3px;border-color: rgb(0, 0, 0);">
+                <option value="">select a hobby</option>
+                <option value="Reading">Reading</option>
+                <option value="Traveling">Traveling</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Sports">Sports</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-submit" style="width: 300px;height: 35px;border-radius: 5px;">Submit</button>
+    </div>
+
+</body>
+</html>
